@@ -161,12 +161,12 @@ st.markdown(
 # GROQ API
 # ==================================================
 
-import os
 from groq import Groq
+import streamlit as st
 
-client = Groq(
-    api_key=os.getenv("GROQ_API_KEY")
-)
+API_KEY = st.secrets["GROQ_API_KEY"]
+
+client = Groq(api_key=API_KEY)
 
 # ==================================================
 # SESSION STATE
