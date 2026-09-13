@@ -161,10 +161,12 @@ st.markdown(
 # GROQ API
 # ==================================================
 
-API_KEY = st.secrets["GROQ_API_KEY"]
+import os
+from groq import Groq
 
-client = Groq(api_key=API_KEY)
-
+client = Groq(
+    api_key=os.getenv("GROQ_API_KEY")
+)
 
 # ==================================================
 # SESSION STATE
