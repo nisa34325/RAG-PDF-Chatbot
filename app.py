@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import sys
 import os
 
@@ -2146,4 +2146,4 @@ ANSWER:
             )
 
             st.write(e)
->>>>>>> 0283c297be84baacc220c26ebe6b2159d1490d46
+
