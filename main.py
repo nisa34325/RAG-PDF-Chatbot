@@ -13,10 +13,11 @@ pdf_path = r"C:\Users\Nisa\Downloads\DBMSRag.pdf"
 # 2. GROQ API KEY
 # ==========================================
 
-API_KEY = "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"
+import os
+from groq import Groq
 
 client = Groq(
-    api_key=API_KEY
+    api_key=os.getenv("GROQ_API_KEY")
 )
 
 
