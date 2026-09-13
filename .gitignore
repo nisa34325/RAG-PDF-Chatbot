@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 .streamlit/
 .venv/
 __pycache__/
 *.pyc
+=======
+.streamlit/
+.venv/
+__pycache__/
+*.pyc
+>>>>>>> 0283c297be84baacc220c26ebe6b2159d1490d46
