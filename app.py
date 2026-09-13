@@ -113,15 +113,49 @@ section[data-testid="stSidebar"] * {
 
 /* Input */
 
-div[data-testid="stChatInput"] {
+/* Streamlit native components - Dark Mode */
+
+[data-testid="stFileUploader"] {
     background: #1e293b;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-div[data-testid="stChatInput"] textarea {
+[data-testid="stFileUploader"] section {
     background: #1e293b;
-    color: #ffffff;
+    border: 1px solid #334155;
 }
 
+[data-testid="stFileUploader"] * {
+    color: #e2e8f0 !important;
+}
+
+[data-testid="stChatInput"] {
+    background: #1e293b !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-testid="stChatInput"] textarea {
+    background: #1e293b !important;
+    color: #ffffff !important;
+}
+
+[data-testid="stChatInput"] textarea::placeholder {
+    color: #94a3b8 !important;
+}
+
+/* Info / success boxes */
+
+[data-testid="stAlert"] {
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+}
+
+/* Markdown text */
+
+.stMarkdown, .stText {
+    color: #e2e8f0;
+}
 /* Buttons */
 
 .stButton > button {
